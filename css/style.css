@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import "reset.css";
+@import "global.css";
+
+.top-header {
+  background-color: #3d3d5c;
+  color: white;
+  padding: 10px 10px 15px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-header .header__column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__column .header__text {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.header__column .header__number {
+  font-size: 14px;
+  color: #d9d9d9;
+}
+
+.top__image img {
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #ebebeb;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.main_amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.total__ether .usd-total {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.total__ether .eth-total {
+  font-size: 20px;
+  font-weight: 600;
+  color: #8c8c8c;
+}
+
+.main_amount .main_function {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.main_function .function__section-row {
+  padding: 10px 30px 10px 30px;
+  border: 2px solid #b3f0ff;
+  border-radius: 5%;
+  margin-top: 20px;
+}
+
+.main_function .function__section-row a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #008fb3;
+}
+
+.main_function .function_deposit {
+  margin-right: 15px;
+}
+
+.history_title {
+  border-bottom: 2px solid #ebebeb;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #b4b4b4;
+  margin-top: 10px;
+}
+
+.trans-history-list .history__item {
+  border-bottom: 2px solid #ebebeb;
+}
+
+/* .trans-history-list .history__item:last-child {
+  border: none;
+} */
+
+.trans-history-list .history__item a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 15px 10px 15px;
+}
+
+.history__item .history__contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.history__item .history_date_time {
+  font-size: 14px;
+  color: #666666;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.history__contents .history_log {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history_log .item_column_title {
+  display: flex;
+  padding-top: 5px;
+}
+
+.history_log .item_column_title i {
+  border-radius: 50%;
+  border: 1px solid #523727;
+  border: 1px solid #ebebeb;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  margin-right: 10px;
+}
+
+.history_item_column .history_preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history_preview .transaction_title {
+  font-size: 18px;
+}
+
+.history_preview .history_tag {
+  background-color: #d9ffb3;
+  align-items: center;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-align: center;
+  color: #408000;
+}
+
+.history_log .history_amount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history_amount .usd_amount {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.history_amount .eth_amount {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4d4d4d;
+  text-align: right;
+  margin-top: 8px;
+}
